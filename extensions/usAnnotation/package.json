@@ -1,6 +1,6 @@
 {
   "name": "@ohif/extension-ultrasound-pleura-bline",
-  "version": "3.12.0-beta.134",
+  "version": "3.12.0-beta.135",
   "description": "",
   "author": "Rodrigo Basilio",
   "license": "MIT",
@@ -24,11 +24,11 @@
     "yarn": ">=1.18.0"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --config .webpack/webpack.dev.js --watch --output-pathinfo",
-    "dev:my-extension": "yarn run dev",
-    "build": "cross-env NODE_ENV=production webpack --config .webpack/webpack.prod.js",
-    "build:package": "yarn run build",
-    "start": "yarn run dev"
+    "dev": "node init && cross-env NODE_ENV=development webpack --config .webpack/webpack.dev.js --watch --output-pathinfo",
+    "dev:my-extension": "node init && yarn run dev",
+    "build": "node init && cross-env NODE_ENV=production webpack --config .webpack/webpack.prod.js",
+    "build:package": "node init && yarn run build",
+    "start": "node init && yarn run dev"
   },
   "peerDependencies": {
     "prop-types": "15.8.1",
@@ -44,11 +44,11 @@
     "@babel/runtime": "7.28.2",
     "@cornerstonejs/core": "4.15.29",
     "@cornerstonejs/tools": "4.15.29",
-    "@ohif/core": "3.12.0-beta.134",
-    "@ohif/extension-cornerstone": "3.12.0-beta.134",
-    "@ohif/extension-default": "3.12.0-beta.134",
-    "@ohif/i18n": "3.12.0-beta.134",
-    "@ohif/ui-next": "3.12.0-beta.134"
+    "@ohif/core": "3.12.0-beta.135",
+    "@ohif/extension-cornerstone": "3.12.0-beta.135",
+    "@ohif/extension-default": "3.12.0-beta.135",
+    "@ohif/i18n": "3.12.0-beta.135",
+    "@ohif/ui-next": "3.12.0-beta.135"
   },
   "devDependencies": {
     "@babel/core": "7.28.0",
